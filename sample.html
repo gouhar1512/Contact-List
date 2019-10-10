@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Contact List</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="create">
+                <div class="type-heading">Create</div>
+                <table>    
+                    <tr>
+                        <td>Name</td>
+                        <td><input id="userName"></td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td><input id="userPhone"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input id="userEmail"></td>
+                        <td><button onclick="addData()">Add</button></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="retrieve">
+                <div class="type-heading">Retrieve</div>
+                <table>
+                    <tr>
+                        <td><input id="retriveValue"></td>
+                        <td><button onclick="getData()">Get</button></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>Name : </td>
+                        <td><span id="rName"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Email : </td>
+                        <td><span id="rEmail"></span></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="update">
+                <div class="type-heading">Update</div>
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td><input id="prName"></td>
+                        <td><button onclick="showData()">Show</button></td>
+                    </tr>
+                </table>
+                <table id = "newFieldsForUpdate">
+                    <tr>
+                        <td>New name</td>
+                        <td><input id="newName"></td>
+                    </tr>
+                    <tr>
+                        <td>New phone</td>
+                        <td><input id="newPhone"></td>
+                    </tr>
+                    <tr>
+                        <td>New email</td>
+                        <td><input id="newEmail"></td>
+                    </tr>
+                </table>
+                
+                <div id='update-confirmBox'></div>
+
+            </div>
+            <div class="delete">
+                <div class="type-heading">Delete</div>
+                <table>
+                    <tr>
+                        <td><input id="deleteValue"></td>
+                        <td><button onclick="deleteData()">Delete</button></td>
+                    </tr>
+                </table>
+                <div id="confirmBox"></div>
+            </div>
+
+                
+
+            
+            <div class="other">
+                <div id="status"></div>
+                <button onclick="showAll()" style="width:100px">Show All</button>
+                <button onclick="deleteAll()" style="width:100px">Delete All</button>
+            </div>
+        </div>
+        
+        <div id="userData" class="container">
+        </div>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
