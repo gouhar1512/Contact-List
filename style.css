@@ -2,6 +2,11 @@ body{
     font-family: Comic Sans MS;
     background-image: linear-gradient(to right,#00AAFF, #00FF6C);
 }
+.headings{
+	margin: auto;
+    width: 15%;
+    padding: 10px;
+}
 .container{
     display: grid;
     justify-content: center;
